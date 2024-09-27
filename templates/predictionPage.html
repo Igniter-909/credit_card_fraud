@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Credit Card Fraud Detection System</h1>
+    
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+         <h1>
+             <legend>Credit Card Fraud Detection</legend>
+         </h1>
+         <div class="mb-3">
+            <label class="form-label">Time</label>
+            <input class="form-control" type="number" name="time"
+                placeholder="Enter the time" min='0'/>
+        </div>
+        <div class="mb-3"></div>
+            <label class="form-label">V1</label>
+            <input class="form-control" type="number" name="v1" step="any"
+                placeholder="Enter V1" min='0'/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">V2</label>
+            <input class="form-control" type="number"  step="any" name="v2" placeholder="Enter V2" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V3</label>
+            <input class="form-control" type="number" step="any" name="v3" placeholder="Enter V3" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V4</label>
+            <input class="form-control" type="number" step="any" name="v4" placeholder="Enter V4" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V5</label>
+            <input class="form-control" type="number" name="v5" step="any" placeholder="Enter V5" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V6</label>
+            <input class="form-control" type="number" name="v6" step="any" placeholder="Enter V6" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V7</label>
+            <input class="form-control" type="number" name="v7" step="any" placeholder="Enter V7" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V8</label>
+            <input class="form-control" type="number" name="v8" step="any" placeholder="Enter V8" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V9</label>
+            <input class="form-control" type="number" name="v9" step="any" placeholder="Enter V9" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V10</label>
+            <input class="form-control" type="number" name="v10" step="any" placeholder="Enter V10" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V11</label>
+            <input class="form-control" type="number" name="v11" step="any" placeholder="Enter V11" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V12</label>
+            <input class="form-control" type="number" name="v12" step="any" placeholder="Enter V12" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V13</label>
+            <input class="form-control" type="number" name="v13" step="any" placeholder="Enter V13" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V14</label>
+            <input class="form-control" type="number" name="v14" step="any" placeholder="Enter V14" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V15</label>
+            <input class="form-control" type="number" name="v15" step="any" placeholder="Enter V15" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V16</label>
+            <input class="form-control" type="number" name="v16" placeholder="Enter V16" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V17</label>
+            <input class="form-control" type="number" name="v17" placeholder="Enter V17" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V18</label>
+            <input class="form-control" type="number" name="v18" placeholder="Enter V18" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V19</label>
+            <input class="form-control" type="number" name="v19" placeholder="Enter V19" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V20</label>
+            <input class="form-control" type="number" name="v20" placeholder="Enter V20" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V21</label>
+            <input class="form-control" type="number" name="v21" placeholder="Enter V21" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V22</label>
+            <input class="form-control" type="number" name="v22" placeholder="Enter V22" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V23</label>
+            <input class="form-control" type="number" name="v23" placeholder="Enter V23" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V24</label>
+            <input class="form-control" type="number" name="v24" placeholder="Enter V24" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V25</label>
+            <input class="form-control" type="number" name="v25" placeholder="Enter V25" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V26</label>
+            <input class="form-control" type="number" name="v26" placeholder="Enter V26" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V27</label>
+            <input class="form-control" type="number" name="v27" placeholder="Enter V27" step="any" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">V28</label>
+            <input class="form-control" type="number" name="v28" step="any" placeholder="Enter V28" min='0'/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Amount</label>
+            <input class="form-control" type="number" name="amount" step="any" placeholder="Enter the amount" min='0'/>
+        </div>
+        <div class="mb-3"></div>
+            <input class="btn btn-primary" type="submit" value="Predict Fraud or Legit" required />
+        </div>
+     </form>
+     <h2>
+        The prediction is {{results}}
+     </h2>
+     </div>
+</body>
+</html>
